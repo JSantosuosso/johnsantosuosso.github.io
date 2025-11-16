@@ -1,86 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Engineering Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #222;
-    }
-    header {
-      background: #111;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-    h1 { margin: 0; }
-    .section {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem 1rem;
-      background: white;
-      margin-top: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .project {
-      margin-bottom: 2rem;
-    }
-    .project h2 {
-      margin-bottom: .3rem;
-    }
-    .project p {
-      margin-top: 0;
-      line-height: 1.5;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Engineering Portfolio</h1>
-    <p>Selected Projects</p>
-  </header>
+<a href="#projects">Projects</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
 
-  <div class="section">
-    <div class="project">
-      <h2>Mandalorian Wrist‑Mounted Flame Thrower</h2>
-      <p>A wearable wrist-mounted flamethrower system inspired by Mandalorian armor. Integrated fuel delivery, ignition control, and safety mechanisms built into a forearm-mounted housing. CAD‑designed, fabricated, and tested for controlled flame projection.</p>
-    </div>
 
-    <div class="project">
-      <h2>Cephalobot – Soft Robotic Squid</h2>
-      <p>A soft‑robotic biomimetic squid using silicone molding, distributed pneumatic actuation, and flexible linkages. Designed to replicate cephalopod‑like undulating motion for research in soft robotics and underwater locomotion.</p>
-    </div>
+<section id="projects" class="section">
+<h1>Projects</h1>
+<div class="grid">
 
-    <div class="project">
-      <h2>VT CRO Trimodal Robot</h2>
-      <p>A multifunctional robot for the Center for Research in Ocean Engineering at Virginia Tech. Capable of walking, rolling, and swimming through a trimodal actuation architecture. Contributed design, modeling, and mechanical integration.</p>
-    </div>
 
-    <div class="project">
-      <h2>Follow‑Me Drone</h2>
-      <p>An autonomous quadcopter using computer vision and GPS‑assisted tracking to follow a target user. Features onboard ESP32‑based communication, PID control loops, and custom‑designed tracking algorithms.</p>
-    </div>
+<a href="projects/flamethrower.html" class="card slide-up">
+<img src="assets/images/placeholder.png" />
+<div class="card-content">
+<h2>Mandalorian Wrist Flamethrower</h2>
+</div>
+</a>
 
-    <div class="project">
-      <h2>e‑Nable @ Virginia Tech – Low‑Cost Prosthetic Hand</h2>
-      <p>A 3D‑printed mechanical prosthetic hand for underserved communities. Designed for low‑cost production and modular assembly with improved grip performance and adjustable tendon routing.</p>
-    </div>
 
-    <div class="project">
-      <h2>CanSat @ VT 2024 – Atmospheric Probe</h2>
-      <p>Designed and built a deployable probe for CanSat 2024. Features telemetry, microcontroller‑based sensor suite, aerodynamic stability system, and controlled descent mechanisms.</p>
-    </div>
+<a href="projects/cephalobot.html" class="card slide-up">
+<img src="assets/images/placeholder.png" />
+<div class="card-content">
+<h2>Cephalobot Soft Robotic Squid</h2>
+</div>
+</a>
 
-    <div class="project">
-      <h2>Cardboard Bridge</h2>
-      <p>A structural engineering challenge project: designed, analyzed, and built a fully cardboard bridge capable of supporting significant loads through optimized geometry and load distribution.</p>
-    </div>
-  </div>
+
+<a href="projects/cro.html" class="card slide-up">
+<img src="assets/images/placeholder.png" />
+<div class="card-content">
+<h2>VT CRO Trimodal Robot</h2>
+</div>
+</a>
+
+
+<a href="projects/followme.html" class="card slide-up">
+<img src="assets/images/placeholder.png" />
+<div class="card-content">
+<h2>Follow‑Me Drone</h2>
+</div>
+</a>
+
+
+<a href="projects/prosthetic.html" class="card slide-up">
+<img src="assets/images/placeholder.png" />
+<div class="card-content">
+<h2>e‑Nable Prosthetic Hand</h2>
+</div>
+</a>
+
+
+<a href="projects/cansat.html" class="card slide-up">
+<img src="assets/images/placeholder.png" />
+<div class="card-content">
+<h2>CanSat 2024 Probe</h2>
+</div>
+</a>
+
+
+<a href="projects/cardboard.html" class="card slide-up">
+<img src="assets/images/placeholder.png" />
+<div class="card-content">
+<h2>Cardboard Bridge</h2>
+</div>
+</a>
+
+
+</div>
+</section>
+
+
+<section id="about" class="section fade-in">
+<h1>About Me</h1>
+<p>Engineer specializing in robotics, embedded systems, rapid prototyping, control systems, and CAD-based design. Passionate about building real hardware that pushes boundaries.</p>
+</section>
+
+
+<section id="contact" class="section fade-in">
+<h1>Contact</h1>
+<p>Email: your_email_here</p>
+<p>LinkedIn: your_linkedin_here</p>
+</section>
+
+
+<footer>
+© 2025 John Santosuosso
+</footer>
+
+
 </body>
 </html>
