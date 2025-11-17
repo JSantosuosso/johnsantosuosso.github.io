@@ -32,6 +32,29 @@ darkToggle.textContent = isDark ? '☀️ Light' : '🌙 Dark';
 darkToggle.textContent = body.classList.contains('dark-mode') ? '☀️ Light' : '🌙 Dark';
 }
 
+// Apply dark mode immediately
+if (localStorage.getItem("dark") === "true") {
+  document.documentElement.classList.add("dark-mode");
+}
+
+(function(){
+  const darkToggle = document.getElementById("darkToggle");
+
+  if (darkToggle) {
+    darkToggle.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark-mode");
+      const enabled = document.documentElement.classList.contains("dark-mode");
+      localStorage.setItem("dark", enabled);
+      darkToggle.textContent = enabled ? "☀️ Light Mode" : "🌙 Dark Mode";
+    });
+
+    // Set initial label
+    darkToggle.textContent = 
+      document.documentElement.classList.contains("dark-mode")
+        ? "☀️ Light Mode"
+        : "🌙 Dark Mode";
+  }
+})();
 
 // Smooth scroll for internal links
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
